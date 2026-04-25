@@ -53,11 +53,6 @@ section {
 
 section.hero {
   border-top: none;
-  padding-top: 0;
-}
-
-/* ── Hero ── */
-.hero {
   padding-top: 6rem;
   padding-bottom: 0.5rem;
 }
@@ -73,7 +68,7 @@ section.hero {
   height: 108px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 8%;
+  object-position: center 35%;
   border: 2px solid var(--border);
   box-shadow: var(--shadow-sm);
   flex-shrink: 0;
@@ -339,7 +334,7 @@ footer a:hover {
     padding: 0 1.25rem;
   }
 
-  .hero {
+  section.hero {
     padding-top: 3rem;
   }
 
