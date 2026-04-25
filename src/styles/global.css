@@ -68,7 +68,7 @@ section.hero {
   height: 108px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 35%;
+  object-position: center center;
   border: 2px solid var(--border);
   box-shadow: var(--shadow-sm);
   flex-shrink: 0;
