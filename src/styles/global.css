@@ -67,14 +67,15 @@ section.hero {
 }
 
 .avatar {
-  width: 135px;
-  height: 135px;
-  border-radius: 50%;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   object-position: center;
-  border: 2px solid var(--border);
-  box-shadow: var(--shadow-md);
   flex-shrink: 0;
+  border-radius: 0;
+  border: none;
+  mask-image: radial-gradient(circle at center, black 48%, transparent 72%);
+  -webkit-mask-image: radial-gradient(circle at center, black 48%, transparent 72%);
 }
 
 .hero-text {
@@ -348,8 +349,8 @@ footer a:hover {
   }
 
   .avatar {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
   }
 
   .hero-name {
