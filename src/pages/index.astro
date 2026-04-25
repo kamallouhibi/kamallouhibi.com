@@ -4,28 +4,29 @@ import Base from "../layouts/Base.astro";
 
 <Base title="Kamal Louhibi">
   <section class="hero">
-    <div class="hero-top">
-      <img
-        src="/avatar.png"
-        alt="Kamal Louhibi"
-        class="avatar"
-        width="96"
-        height="96"
-      />
-      <div>
-        <h1 class="hero-name">Kamal Louhibi</h1>
-        <p class="hero-location">Oslo, Norway</p>
-      </div>
-    </div>
+    <img
+      src="/avatar.png"
+      alt="Kamal Louhibi"
+      class="avatar"
+      width="80"
+      height="80"
+    />
+    <p class="hero-location">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Oslo, Norway
+    </p>
     <p class="hero-bio">
       I build small tools that do specific things well.
     </p>
   </section>
 
   <section>
-    <p class="section-label">What I'm working on</p>
+    <p class="section-label">Building</p>
     <div class="card">
-      <p class="card-title">Site Auditor</p>
+      <div class="card-header">
+        <p class="card-title">Site Auditor</p>
+        <span class="badge">Chrome Extension</span>
+      </div>
       <p class="card-desc">
         One-click website audits for web agencies and freelancers who prospect local businesses.
       </p>
@@ -36,7 +37,7 @@ import Base from "../layouts/Base.astro";
           target="_blank"
           rel="noopener noreferrer"
         >
-          Try it
+          Try it free
         </a>
         <a href="/site-auditor" class="btn">Learn more</a>
       </div>
@@ -53,12 +54,15 @@ import Base from "../layouts/Base.astro";
   </section>
 
   <section>
-    <p class="section-label">Contact</p>
-    <ul class="contact-list">
-      <li><a href="mailto:hello@kamallouhibi.com">hello@kamallouhibi.com</a></li>
-      <li><a href="https://www.linkedin.com/in/kamallouhibi/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-      <li><a href="https://github.com/kamallouhibi" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-    </ul>
+    <p class="section-label">Connect</p>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/kamallouhibi/" target="_blank" rel="noopener noreferrer">
+        LinkedIn <span class="arrow">↗</span>
+      </a>
+      <a href="https://github.com/kamallouhibi" target="_blank" rel="noopener noreferrer">
+        GitHub <span class="arrow">↗</span>
+      </a>
+    </div>
   </section>
 
   <footer>
