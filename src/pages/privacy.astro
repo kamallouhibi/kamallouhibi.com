@@ -1,0 +1,125 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  title="Privacy Policy — Kamal Louhibi"
+  description="Privacy policy for Site Auditor and kamallouhibi.com."
+>
+  <div class="page-header">
+    <a href="/" class="back-link">← Back</a>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: 25 April 2026</p>
+  </div>
+
+  <div class="prose">
+    <p>
+      This policy covers the Site Auditor Chrome extension and this website
+      (kamallouhibi.com). It explains what data is collected, why, and what happens
+      to it. No boilerplate — only what's actually true.
+    </p>
+
+    <h2>What Site Auditor collects</h2>
+    <p>When you create an account and use the extension, the following is stored:</p>
+    <ul>
+      <li>
+        <strong>Email address</strong> — used to identify your account and send
+        transactional messages (e.g. license confirmation). Never used for marketing.
+      </li>
+      <li>
+        <strong>Password</strong> — stored as a bcrypt hash. The plaintext password
+        is never stored or transmitted after the initial request.
+      </li>
+      <li>
+        <strong>Audited URLs</strong> — the URLs you submit for auditing are stored
+        temporarily to generate and cache the audit report. They are deleted after
+        24 hours.
+      </li>
+      <li>
+        <strong>JWT (JSON Web Token)</strong> — stored in your browser's
+        <code>localStorage</code> to keep you logged in. This token is scoped to
+        the extension and expires on logout or after a fixed period.
+      </li>
+      <li>
+        <strong>License key</strong> — stored to verify your subscription status.
+      </li>
+    </ul>
+    <p>
+      The extension does not collect browsing history, keystrokes, form data, or
+      any information from pages you visit other than the URL you explicitly submit
+      for an audit.
+    </p>
+
+    <h2>What's sent to third parties</h2>
+    <ul>
+      <li>
+        <strong>Cloudflare</strong> — this website and the Site Auditor backend are
+        hosted on Cloudflare Pages and Cloudflare Workers. Cloudflare processes
+        all incoming requests and applies standard DDoS and bot protection. Their
+        privacy policy is at cloudflare.com/privacypolicy.
+      </li>
+      <li>
+        <strong>Google PageSpeed Insights API</strong> — when you run an audit,
+        the submitted URL is sent to Google's PageSpeed API to retrieve performance
+        scores (Core Web Vitals, Lighthouse metrics). Google's terms apply to that
+        request. No account information is included.
+      </li>
+      <li>
+        <strong>Anthropic</strong> — the extension uses the Claude API (by
+        Anthropic) to generate a one-paragraph outreach angle based on the audit
+        findings. The audited URL and a summary of the audit results are sent to
+        Anthropic's API. No personal account data (email, password, license key)
+        is included in these requests. Anthropic's privacy policy is at
+        anthropic.com/privacy.
+      </li>
+    </ul>
+    <p>There are no analytics tools (Google Analytics, Mixpanel, etc.) on this site or in the extension.</p>
+
+    <h2>Data retention</h2>
+    <ul>
+      <li><strong>Audit results and audited URLs</strong> — deleted 24 hours after the audit is run.</li>
+      <li><strong>Account data</strong> (email, hashed password, license key) — retained until you request deletion.</li>
+      <li><strong>JWT tokens</strong> — stored only in your browser's localStorage; cleared on logout or when the token expires.</li>
+    </ul>
+
+    <h2>Your rights</h2>
+    <p>
+      You can request deletion of your account and all associated data at any time
+      by emailing <a href="mailto:hello@kamallouhibi.com">hello@kamallouhibi.com</a>.
+      I'll confirm and complete the deletion within 7 days.
+    </p>
+    <p>
+      If you're in the EU or EEA, you also have the right to access, correct, and
+      port your data. Same email address, same response time.
+    </p>
+
+    <h2>Cookies</h2>
+    <p>
+      This website does not use cookies. The extension stores a JWT in
+      <code>localStorage</code>, which is not a cookie and is not sent to third-party
+      domains.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      Site Auditor is not directed at children under 13, and I do not knowingly
+      collect data from them.
+    </p>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      If something material changes (new third party, new data type), I'll update
+      the date at the top and, where reasonable, notify active users by email.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy: <a href="mailto:hello@kamallouhibi.com">hello@kamallouhibi.com</a>
+    </p>
+  </div>
+
+  <footer>
+    <span>© 2026 Kamal Louhibi</span>
+    <a href="/">Home</a>
+  </footer>
+</Base>

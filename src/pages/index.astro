@@ -1,0 +1,68 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Kamal Louhibi">
+  <section class="hero">
+    <div class="hero-top">
+      <img
+        src="/avatar.png"
+        alt="Kamal Louhibi"
+        class="avatar"
+        width="96"
+        height="96"
+      />
+      <div>
+        <h1 class="hero-name">Kamal Louhibi</h1>
+        <p class="hero-location">Oslo, Norway</p>
+      </div>
+    </div>
+    <p class="hero-bio">
+      I build small tools that do specific things well.
+    </p>
+  </section>
+
+  <section>
+    <p class="section-label">What I'm working on</p>
+    <div class="card">
+      <p class="card-title">Site Auditor</p>
+      <p class="card-desc">
+        One-click website audits for web agencies and freelancers who prospect local businesses.
+      </p>
+      <div class="card-actions">
+        <a
+          href="https://chrome.google.com/webstore"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Try it
+        </a>
+        <a href="/site-auditor" class="btn">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-label">About</p>
+    <p class="about-text">
+      I'm a software developer based in Oslo. I focus on building tools that
+      solve narrow, specific problems for small businesses and agencies. Currently
+      working on Site Auditor and a few other things in early stages.
+    </p>
+  </section>
+
+  <section>
+    <p class="section-label">Contact</p>
+    <ul class="contact-list">
+      <li><a href="mailto:hello@kamallouhibi.com">hello@kamallouhibi.com</a></li>
+      <li><a href="https://www.linkedin.com/in/kamallouhibi/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://github.com/kamallouhibi" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>© 2026 Kamal Louhibi</span>
+    <a href="/privacy">Privacy Policy</a>
+  </footer>
+</Base>
