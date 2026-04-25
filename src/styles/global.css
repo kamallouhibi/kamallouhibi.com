@@ -58,7 +58,7 @@ section.hero {
 
 /* ── Hero ── */
 .hero {
-  padding-top: 3.5rem;
+  padding-top: 5.5rem;
 }
 
 .hero-row {
@@ -72,7 +72,7 @@ section.hero {
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 12%;
+  object-position: center 22%;
   border: 2px solid var(--border);
   box-shadow: var(--shadow-sm);
   flex-shrink: 0;
