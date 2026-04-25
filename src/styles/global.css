@@ -348,3 +348,27 @@ footer a:hover {
     padding: 1.25rem;
   }
 }
+
+
+.avatar {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 38%;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-md);
+  flex-shrink: 0;
+}
+
+.hero-row {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
