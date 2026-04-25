@@ -4,20 +4,25 @@ import Base from "../layouts/Base.astro";
 
 <Base title="Kamal Louhibi">
   <section class="hero">
-    <img
-      src="/avatar.png"
-      alt="Kamal Louhibi"
-      class="avatar"
-      width="80"
-      height="80"
-    />
-    <p class="hero-location">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      Oslo, Norway
-    </p>
-    <p class="hero-bio">
-      I build small tools that do specific things well.
-    </p>
+    <div class="hero-row">
+      <img
+        src="/avatar.png"
+        alt="Kamal Louhibi"
+        class="avatar"
+        width="80"
+        height="80"
+      />
+      <div class="hero-text">
+        <h1 class="hero-name">Kamal Louhibi</h1>
+        <p class="hero-location">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.45; flex-shrink:0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Oslo, Norway
+        </p>
+        <p class="hero-bio">
+          I build small tools that do specific things well.
+        </p>
+      </div>
+    </div>
   </section>
 
   <section>
